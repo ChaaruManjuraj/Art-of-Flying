@@ -1,0 +1,145 @@
+.container {
+    margin: 0;
+    padding: 1rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0.5px solid rgb(1, 24, 32);
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        color: black
+    }
+    a:hover {
+        font-weight: 700;
+        transition: transform .4s;
+        transform: scale(1.1);
+    }
+}
+
+.logo {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  font-family: 'Amatic SC', cursive;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Main.js
+.main {
+    .title {
+        margin-top: 3rem;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        margin-top: 0;
+        padding-top: 0;
+        font-weight: 300;
+        font-size: 2.5rem;
+
+        span {
+            font-weight: 500;
+            color: black;
+        }
+        span:hover {
+            font-weight: 700;
+            transition: transform .4s;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.go-to {
+
+    display: relative;
+    margin-top: 4rem;
+
+    button {
+        padding-bottom: 15rem;
+        padding-top: 14rem;
+        width: 100%;
+    }
+
+    button:hover {
+        transition: transform .4s;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+}
+
+.introduction-container {
+    width: 100%;
+    height: 100%;
+}
+
+.case_studies {
+    .card {
+        height: 33rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transition: transform .4s;
+        transform: scale(1.03);
+    }
+
+    h3 {
+        font-weight: 320;
+        text-shadow: 0.3px 0.3px 0.3px rgb(255, 255, 255);
+
+    }
+
+    #card-1 {
+        background: url(../../public/Assets/Pictures/Card-1A.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-2 {
+        background: url(../../public/Assets/Pictures/Card-2A.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-3 {
+        background: url(../../public/Assets/Pictures/Card-3A.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-4 {
+        background: url(../../public/Assets/Pictures/Card-4A.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-5 {
+        background: url(../../public/Assets/Pictures/Card-5A.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+   
+}
