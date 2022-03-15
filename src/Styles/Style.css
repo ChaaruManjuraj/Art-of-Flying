@@ -24,10 +24,10 @@
 
 .navbar-container a:hover {
   font-weight: 700;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -35,7 +35,7 @@
 .logo {
   font-size: 4rem;
   letter-spacing: 2px;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   text-align: left;
   padding-left: 2rem;
 }
@@ -75,10 +75,10 @@
 
 .main h4 span:hover {
   font-weight: 700;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -95,10 +95,10 @@
 }
 
 .go-to button:hover {
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .go-to h4 {
@@ -113,21 +113,24 @@
 .case_studies .card {
   height: 33rem;
   margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   padding: 0.5rem;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .case_studies .card:hover {
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
 
 .case_studies h3 {
+  color: black;
   font-weight: 320;
   text-shadow: 0.3px 0.3px 0.3px white;
 }
@@ -160,5 +163,30 @@
   background: url(../../public/Assets/Pictures/Card-5A.jpeg);
   background-size: cover;
   background-position: center;
+}
+
+.article {
+  text-align: left;
+  padding: 2rem;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.article h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.article figcaption {
+  font-style: italic;
+  font-weight: 450;
+}
+
+.about {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 17px;
 }
 /*# sourceMappingURL=Style.css.map */
