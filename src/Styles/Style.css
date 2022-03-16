@@ -189,4 +189,17 @@
   padding-right: 10%;
   font-size: 17px;
 }
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact textarea {
+  height: 20rem;
+}
+
+.contact #exampleEmailInput,
+.contact #exampleMessage {
+  padding: 1.5rem;
+}
 /*# sourceMappingURL=Style.css.map */

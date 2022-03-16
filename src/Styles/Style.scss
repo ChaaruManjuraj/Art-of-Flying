@@ -169,3 +169,16 @@
   padding-right: 10%;
   font-size: 17px;
 }
+
+.contact {
+  margin-top: 2rem;
+
+  textarea {
+    height: 20rem;
+  }
+
+  #exampleEmailInput,
+  #exampleMessage {
+    padding: 1.5rem;
+  }
+}
