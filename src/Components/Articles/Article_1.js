@@ -18,8 +18,11 @@ export default function Article_1() {
         <p></p>
         <p>One of the eye witnesses said, “It smashed into the ground really hard. It made a tremendous noise.” The plane had hit the ground in the muddy field, just north of the runway 18R. Since the crash was very close to the airport, the rescue workers had managed to arrive quickly. Most of the passengers had survived and many were badly injured. The Survivors were then shifted to the local hospital. Images of the Amsterdam accident, the third crash of a passenger jet in the past six weeks, had quickly spread around the world.</p>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Crash_Turkish_Airlines_TK_1951_complete_site.jpg" alt="Turkish Airlines Flight 1951" style={{width: "60%", height: "50%", display: "relative", marginLeft: "20%"}} />
-       
+        <figure id="turkish" style={{ textAlign: 'center' }}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Crash_Turkish_Airlines_TK_1951_complete_site.jpg" alt="Turkish Airlines Flight 1951" style={{ width: "60%", height: "50%", display: "relative" }} />
+          <figcaption style={{ textAlign: 'center' }}>Turkish Airlines Flight 1951</figcaption>
+        </figure>
+
         <p>It did not take too long for the Dutch safety board to arrive at the spot to carry forward the investigation. They were in fact not alone as the crash had involved an America-made plane. The US national transportation safety board had sent its expert air crash investigator Joseph Sedor to Amsterdam.</p>
         <p></p>
         <p>Flight 1951 is one of the most advanced aircrafts in the sky among the Boeing 737-800 series. It is designed to travel medium to longer routes at higher altitudes. The FMR Boeing vice president Gordon Bethune said “The new generation 737-800 is still the best series of Boeing planes ever built. We developed this airplane that had improved avionics, improved cockpit and simpler systems that required less patience.”</p>

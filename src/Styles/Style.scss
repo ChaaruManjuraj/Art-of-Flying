@@ -1,3 +1,9 @@
+$breakpoint-phablet: 550px;
+
+.mobile-navbar {
+  display: none;
+}
+
 .container {
   margin: 0;
   padding: 1rem;
@@ -41,6 +47,51 @@
   margin: 0;
 }
 
+// Media for navbar
+
+@media only screen and (max-width: $breakpoint-phablet) {
+  .desktop-navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    .logo {
+      font-size: 25px;
+      padding-bottom: 1rem;
+    }
+
+    #hamburger {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 1rem;
+      padding-right: 2rem;
+      cursor: pointer;
+    }
+
+    .nav-links-mobile {
+      display: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      list-style: none;
+      border-bottom: 0.5px solid black;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        color: black;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
 // Main.js
 .main {
   .title {
@@ -63,6 +114,17 @@
       font-weight: 700;
       transition: transform 0.4s;
       transform: scale(1.1);
+    }
+  }
+}
+
+// Main media
+@media only screen and (max-width: $breakpoint-phablet) {
+  .main {
+    .columns {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -144,6 +206,20 @@
   }
 }
 
+// Media for case studies
+@media only screen and (max-width: $breakpoint-phablet) {
+  .case_studies {
+    .columns {
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      border: 0.5px solid black;
+    }
+  }
+}
+
 .article {
   text-align: left;
   padding: 2rem;
@@ -162,12 +238,44 @@
   }
 }
 
+// Media for articles
+@media only screen and (max-width: $breakpoint-phablet) {
+  .article {
+    padding: 0.5rem;
+    font-size: 15px;
+
+    h3 {
+      text-align: left;
+    }
+
+    figure {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      margin-bottom: 1rem;
+
+      img {
+        width: 100% !important;
+        height: auto;
+      }
+    }
+  }
+}
+
 .about {
   // center text
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 17px;
+}
+
+// Media for about
+@media only screen and (max-width: $breakpoint-phablet) {
+  .about {
+    padding: 0.5rem;
+    font-size: 15px;
+  }
 }
 
 .contact {
@@ -180,5 +288,21 @@
   #exampleEmailInput,
   #exampleMessage {
     padding: 1.5rem;
+  }
+}
+
+// Media for contact
+@media only screen and (max-width: $breakpoint-phablet) {
+  .contact {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+// Media for summary
+@media only screen and (max-width: $breakpoint-phablet) {
+  #summary {
+    padding: 1rem;
+    text-align: left;
   }
 }

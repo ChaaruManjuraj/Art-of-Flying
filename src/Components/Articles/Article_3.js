@@ -52,7 +52,7 @@ export default function Article_3() {
         <p></p>
         <p>At 06:46, the pilots must land the plane without the power and somehow get it to stop. The Airbus hits hard at high speed. Captain Piche tries to hold the nose down. After bursting 8 tyres the plane finally stops at the middle of the runway.</p>
 
-        <figure style={{ textAlign: 'center' }}>
+        <figure id="flex-figure" style={{ textAlign: 'center' }}>
           <img src="https://artofpiloting.files.wordpress.com/2015/12/7.jpg" alt="Air Transat Flight 236" style={{ width: "40%", height: "50%", marginRight: "0.5rem" }} />
           <img src="https://artofpiloting.files.wordpress.com/2015/12/1947811.jpg?w=594&h=396" alt="Air Transat Flight 236" style={{ width: "40%", height: "50%", marginLeft: "0.5rem"}} />
           <figcaption style={{ textAlign: 'center' }}>Air Transat Flight 236 After Landing!</figcaption>

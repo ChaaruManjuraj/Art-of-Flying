@@ -1,3 +1,7 @@
+.mobile-navbar {
+  display: none;
+}
+
 .container {
   margin: 0;
   padding: 1rem;
@@ -55,6 +59,55 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 550px) {
+  .desktop-navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  .mobile-navbar .logo {
+    font-size: 25px;
+    padding-bottom: 1rem;
+  }
+  .mobile-navbar #hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  .mobile-navbar .nav-links-mobile {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    list-style: none;
+    border-bottom: 0.5px solid black;
+  }
+  .mobile-navbar .nav-links-mobile a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
 .main .title {
   margin-top: 3rem;
   font-weight: 300;
@@ -81,6 +134,14 @@
   transition: transform 0.4s, -webkit-transform 0.4s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media only screen and (max-width: 550px) {
+  .main .columns {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .go-to {
@@ -165,6 +226,16 @@
   background-position: center;
 }
 
+@media only screen and (max-width: 550px) {
+  .case_studies .columns {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  .case_studies .card {
+    border: 0.5px solid black;
+  }
+}
+
 .article {
   text-align: left;
   padding: 2rem;
@@ -183,11 +254,38 @@
   font-weight: 450;
 }
 
+@media only screen and (max-width: 550px) {
+  .article {
+    padding: 0.5rem;
+    font-size: 15px;
+  }
+  .article h3 {
+    text-align: left;
+  }
+  .article figure {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .article figure img {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
 .about {
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 17px;
+}
+
+@media only screen and (max-width: 550px) {
+  .about {
+    padding: 0.5rem;
+    font-size: 15px;
+  }
 }
 
 .contact {
@@ -201,5 +299,19 @@
 .contact #exampleEmailInput,
 .contact #exampleMessage {
   padding: 1.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .contact {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #summary {
+    padding: 1rem;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=Style.css.map */
